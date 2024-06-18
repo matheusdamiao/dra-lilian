@@ -16,13 +16,6 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <div className="">
       <HeroSection />
-      <ChallengesSection />
-      <BenefitsSection />
-      <PsicanaliseSection />
-      <QuoteSection />
-      <AboutSection />
-      <ReviewSection />
-      <FAQsection />
       <FormSection />
       <FooterSection />
     </div>
