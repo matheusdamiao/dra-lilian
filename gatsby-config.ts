@@ -5,7 +5,7 @@ const config: GatsbyConfig = {
     title: `Del Bianco Domingos`,
     description: "Sociedade de Advocacia",
     image: `/icon.png`,
-    siteUrl: `https://fabioteixeira.netlify.app/`
+    siteUrl: `https://del-bianco-santos-advocacia.netlify.app/`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
