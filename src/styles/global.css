@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,35 +8,27 @@ html {
     scroll-behavior: smooth;
 }
 
-.swiper-wrapper {
-    transition-timing-function: linear !important;
+
+.arsenal-regular {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
-body {
-    font-family: "Montserrat", sans-serif;
-}
-
-.BgTransparent{
-    background-color: transparent;
-}
-
-.rotate-hand {
-    animation: handMove 2s infinite;
-}
-
-@keyframes handMove {
-    0% {
-        transform: rotate(0);
-    }
-
-    50% {
-        transform: rotate(45deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-
-
+  .arsenal-bold {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .arsenal-regular-italic {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .arsenal-bold-italic {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }

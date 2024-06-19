@@ -2,8 +2,8 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Fábio Teixeira - Psicanalista`,
-    description: "Cultive bem-estar e autoconhecimento através da Psicanálise",
+    title: `Del Bianco Domingos`,
+    description: "Sociedade de Advocacia",
     image: `/icon.png`,
     siteUrl: `https://fabioteixeira.netlify.app/`
   },

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import dm from "./../icons/dm.svg";
-import bg from "./../images/bg-formsection.webp";
 import zap from "./../icons/whatsapp.svg";
 
 const FormSection = () => {
@@ -168,11 +167,11 @@ const FormSection = () => {
             </a>
           </form>
         </div>
-        <img
+        {/* <img
           src={bg}
           width={645.17}
           className="px-6  lg:px-0 max-h-[500px] lg:max-h-[650px] w-fit mx-auto object-cover lg:absolute right-0"
-        />
+        /> */}
       </div>
     </div>
   );

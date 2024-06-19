@@ -1,50 +1,61 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-import bgDesktop from "./../images/bg-hero.webp";
-import bgMobile from "./../images/bg-hero-mobile.webp";
+import zap from "./../icons/whatsapp.svg";
+import mail from "./../icons/mail.svg";
+import location from "./../icons/location.svg";
 
 import NavBar from "./navBar";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[#1D231C] relative lg:h-[800px] h-full">
-      <img
-        src={bgDesktop}
-        className="lg:object-cover lg:h-[800px] absolute top-0 left-0 w-full right-0 hidden lg:block z-[2]"
-        alt=""
-      />
-      <img
-        src={bgMobile}
-        alt=""
-        className="lg:hidden block absolute top-0 h-full w-full"
-      />
+    <div className="bg-[#FFFFF] h-full">
       <NavBar />
-      <section className="pt-[100px] flex mx-auto w-full max-w-7xl lg:justify-between justify-center lg:flex-nowrap flex-wrap h-full ">
-        <div className="px-6 lg:pt-0 pt-[100px] z-[2] flex lg:items-start mx-auto items-center text-white justify-center lg:h-full flex-col max-w-[800px]  gap-[36px]">
-          <h1 className="font-medium lg:text-5xl text-4xl lg:text-left text-center max-w-[620px] !leading-[1.25]   ">
-            Cultive bem-estar e saúde mental através da Psicanálise
+      <section className=" bg-[#E3E3E3] flex mx-auto w-full lg:justify-between justify-center lg:flex-nowrap flex-wrap h-[500px] lg:h-[65svh] ">
+        <div className="px-6 flex w-full items-center justify-center lg:h-full flex-col gap-[35px]">
+          <h1 className="arsenal-regular lg:text-5xl text-4xl text-[#333333] text-center ">
+            Site em Construção
           </h1>
-          <h3 className=" font-medium lg:text-2xl text-lg max-w-[550px] text-center lg:text-left ">
-            O processo analítico pode ajudar a se fortalecer diante das
-            angústias e sofrimentos do dia-a-dia tornando a vida mais
-            interessante e fascinante
+          <h3 className="arsenal-regular lg:text-lg text-base max-w-[400px] text-[#2A2A2A] text-center ">
+            Enquanto finalizamos nosso site, você pode entrar em contato conosco
+            pelos links abaixo
           </h3>
-          <a
-            href="/#contato"
-            className="bg-[#48664E] text-center text-base px-4 py-3 lg:text-xl z-10  max-w-[352px] w-full"
-          >
-            Inicie sua jornada
-          </a>
-          <small>Atendimento Online</small>
-        </div>
-        <div>
-          <StaticImage
-            src="../images/fabio-hero-section.webp"
-            alt=""
-            className="lg:max-w-[644px] px-6 lg:px-0 z-50 "
-          />
+          <div className="flex flex-col  max-w-[300px] w-full">
+            <a
+              href="https://api.whatsapp.com/send?phone=5511960585588"
+              target="_blank"
+              className="flex items-center justify-center bg-[#333333] w-full"
+            >
+              <img src={zap} />
+              <p className=" text-center text-white px-4 py-3 text-base">
+                WhatsApp
+              </p>
+            </a>
+            <span className="block text-center text-gray-500 py-1">ou </span>
+            <div className="bg-white border-[#333333] border-[1px] w-full flex items-center justify-center">
+              <img src={mail} />
+              <a
+                href="mailto:liliandbd@gmail.com"
+                className=" text-center text-base px-4 py-3 text-[#444444] "
+              >
+                liliandbd@gmail.com
+              </a>
+            </div>
+          </div>
         </div>
       </section>
+      <div className="bg-[#4D4D4D] px-8 w-full h-[250px] lg:h-[20svh] flex items-center justify-center flex-col gap-6">
+        <div className="flex gap-4">
+          <img src={location} alt="" />
+          <p className="text-white">
+            Rua Afonso Braz nº 900 - Vila Nova Conceição - São Paulo - SP
+          </p>
+        </div>
+        <div className="flex gap-4">
+          <img src={location} alt="" />
+          <p className="text-white">
+            Rua Dr Bormann, nº 13 - salas 307, 308, 309 - Centro - Niterói - RJ
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

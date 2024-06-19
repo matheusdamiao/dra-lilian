@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useWindowDimensions from "./../utils/useWindowDimension";
-import logoBranca from "./../images/logo-branca.webp";
+import logo from "./../images/logo_del_bianco.svg";
 
 const NavBar = () => {
   const size = useWindowDimensions();
@@ -17,105 +17,14 @@ const NavBar = () => {
   }, [size]);
 
   return (
-    <div className="bg-transparent absolute top-0 w-full h-24 lg:h-32 flex items-center justify-center flex-col pt-4 px-6 z-50">
-      <div className=" flex items-center relative justify-end max-w-7xl w-full m-auto">
-        <img
-          src={logoBranca}
-          width={214}
-          height={76.11}
-          alt="logo"
-          className="w-[214px] absolute left-4 lg:m-0"
-        />
-        <ul className="hidden lg:flex gap-10 self-end lg:pr-20">
-          <li>
-            <a
-              href="/#analise"
-              className="text-[#c2c2c2]  font-body lg:text-base  hover:text-[#FFFF]  hover:after:w-full after:w-0  hover:after:h-[2px] after:bg-[#48664E] hover:after:block after:transition-all relative after:absolute after:bottom-[-5px]"
-            >
-              Análise
-            </a>
-          </li>
-          <li>
-            <a
-              href="/#psicanalise"
-              className="text-[#c2c2c2]  font-body lg:text-base hover:text-[#FFFF] hover:after:w-full after:w-0  hover:after:h-[2px] after:bg-[#48664E] hover:after:block after:transition-all relative after:absolute after:bottom-[-5px]"
-            >
-              Psicanálise
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="/#sobre"
-              className="text-[#c2c2c2]  font-body lg:text-base hover:text-[#FFFF] hover:after:w-full after:w-0  hover:after:h-[2px] after:bg-[#48664E] hover:after:block after:transition-all relative after:absolute after:bottom-[-5px]"
-            >
-              Sobre mim
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="/#contato"
-              className="text-[#c2c2c2]  font-body lg:text-base hover:text-[#FFFF] hover:after:w-full after:w-0  hover:after:h-[2px] after:bg-[#48664E] hover:after:block after:transition-all relative after:absolute after:bottom-[-5px]"
-            >
-              Contato
-            </a>
-          </li>
-        </ul>
-        {/* mobile */}
-        <div
-          className={`lg:hidden block cursor-pointer px-4 py-4 z-[9999] `}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <span
-            className={`bg-white relative transition-all rounded-md before:rounded-md after:rounded-md before:transition-all after:transition-all flex flex-col gap-5 h-1 w-6 after:absolute after:top-2 after:h-1 after:bg-[#EDEDED] after:w-6 before:absolute ${
-              isOpen &&
-              "BgTransparent before:rotate-45 before:translate-x-[2px] before:translate-y-[10px] after:rotate-[-45deg] after:translate-x-[2px] after:translate-y-[-6px]"
-            } before:bottom-2 before:h-1 before:mt-2 before:bg-[#EDEDED] before:w-6`}
-          ></span>
-        </div>
-        <ul
-          className={`lg:w-[50%] w-full z-[99] h-[150px] top-20 absolute flex flex-col bg-[#EDEDED]  transition-opacity  left-0 items-center justify-evenly  ${
-            isOpen === true && "translate-x-0 transition-transform duration-500"
-          }
-            ${
-              isOpen === false &&
-              "translate-x-[-1000px] transition-transform duration-500 delay-100"
-            }
-          } `}
-        >
-          <li>
-            <a href="/#sobre" className="text-[#494949]  font-body lg:text-xl">
-              Sobre mim
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="/#analise"
-              className="text-[#494949]  font-body lg:text-xl"
-            >
-              Análise
-            </a>
-          </li>
-          <li>
-            <a
-              href="/#psicanalise"
-              className="text-[#494949]  font-body lg:text-xl"
-            >
-              Psicanálise
-            </a>
-          </li>
-          <li>
-            <a
-              href="/#contato"
-              className="text-[#494949]  font-body lg:text-xl"
-            >
-              Contato
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div className="bg-transparent top-0 w-full h-24 lg:h-[17svh] flex items-center justify-center flex-col pt-4 px-6 z-50">
+      <img
+        src={logo}
+        width={214}
+        height={76.11}
+        alt="logo"
+        className="w-[200px] lg:w-[274px] "
+      />
     </div>
   );
 };
