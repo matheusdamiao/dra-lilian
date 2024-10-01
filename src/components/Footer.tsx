@@ -60,7 +60,7 @@ const Footer = () => {
 
       </div>
       <div className='flex bg-[#1B1C1C] text-sm justify-center lg:justify-between gap-4 flex-wrap py-8 text-[#CDCDCD]'>
-         <div className='flex items-center justify-between w-full max-w-7xl mx-auto'>
+         <div className='flex flex-col lg:flex-row items-center justify-between w-full max-w-7xl mx-auto'>
             <small> Todos os direitos Reservados - 2024</small>
 
             <small>Del Bianco Santos - Advocacia e Consultoria Jurídica </small>

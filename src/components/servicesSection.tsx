@@ -45,7 +45,7 @@ const ServicesSection = () => {
 
 
   return (
-    <div className='flex flex-col px-6 max-w-7xl mx-auto my-[50px] lg:my-[100px]'>
+    <div id='especialidades' className='flex flex-col px-6 max-w-7xl mx-auto my-[50px] lg:my-[100px]'>
       <h3 className='text-[#818181] text-sm lg:text-xl '>Nossas especialidades</h3>
       <h4 className='text-[#333333] lg:text-[36px] pt-4 text-[28px] lg:w-[70%] '>Com uma abordagem humana e personalizada, levamos soluções jurídicas a empresas e pessoas físicas</h4>
       <div className='flex pt-12 lg:justify-start justify-center w-full gap-8 flex-wrap'>

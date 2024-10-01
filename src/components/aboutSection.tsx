@@ -3,7 +3,7 @@ import fotoLilian from './../images/foto-lilian-about.webp'
 
 const AboutSection = () => {
   return (
-     <div id="sobre" className="w-full h-full max-w-7xl mx-auto mt-[50px] lg:my-[150px]">
+     <div id="fundadora" className="w-full h-full max-w-7xl mx-auto mt-[50px] lg:my-[150px]">
       <div className="grid grid-cols-1 lg:grid-cols-2 max-w-[1200px] justify-center items-center gap-[20px] mx-auto  ">
         <div className="flex flex-col lg:order-2 lg:row-span-1 max-w-[450px] self-center  px-6">
             <h3 className='text-[#C6C6C6] text-sm lg:text-xl z-40 '>Conheça a fundadora</h3>

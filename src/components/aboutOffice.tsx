@@ -3,8 +3,8 @@ import fotoOffice from './../images/foto-office.webp'
 
 const AboutOffice = () => {
   return (
-    <div className='bg-[#333333] h-full lg:h-[800px] relative overflow-hidden flex flex-wrap lg:flex-nowrap '>
-        <img src={fotoOffice} alt=''  className='w-full lg:max-w-[500px] xl:max-w-[700px] object-cover order-2 lg:order-1'/>
+    <div id='sobre' className='bg-[#333333] h-full lg:h-[800px] relative overflow-hidden flex flex-wrap lg:flex-nowrap '>
+        <img src={fotoOffice} alt=''  className='w-full lg:max-w-[500px] xl:max-w-[600px] object-cover order-2 lg:order-1'/>
 
         <div className='flex flex-col max-w-[800px] px-6 py-16 lg:px-24 lg:py-12 gap-8 justify-center order-1 lg:order-2'>
             <h3 className='text-[#C6C6C6] text-sm lg:text-xl z-40 '>Conheça o Escritório</h3>

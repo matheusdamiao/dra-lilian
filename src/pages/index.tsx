@@ -9,10 +9,12 @@ import AboutSection from "../components/aboutSection";
 import AboutOffice from "../components/aboutOffice";
 import ContactSection from "../components/contactSection";
 import Footer from "../components/Footer";
+import Menu from "../components/Menu";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <div>
+      <Menu/>
       <HeroSection />
       <ServicesSection/>
       <DiferentialSection/>

@@ -57,7 +57,7 @@ const ContactSection = () => {
       };
 
   return (
-    <div className='pt-[100px]'>
+    <div id='contato' className='pt-[100px]'>
       <div className='max-w-7xl flex  flex-col mx-auto w-full flex-wrap  lg:flex-row gap-4 lg:gap-16'>
         <div className='px-6 flex flex-col max-w-[650px] col-span-2'>
             <h3 className='text-[#C6C6C6] text-sm lg:text-xl z-40 '>Entre em contato</h3>
@@ -75,17 +75,17 @@ const ContactSection = () => {
 
                 <div className='flex gap-4'>
                     <img src={mail} alt="" className='w-[30px]'/>
-                    <p className='text-[#686868]'> contato@delbiancodomingos.com.br</p>
+                    <p className='text-[#686868] text-wrap text-sm lg:text-base'> contato@delbiancodomingos.com.br</p>
                 </div>
 
                 <div className='flex gap-4'>
                     <img src={location} alt="" className='w-[30px]' />
-                    <p className='text-[#686868]'>Rua Afonso Braz nº 900 - Vila Nova Conceição - São Paulo - SP</p>
+                    <p className='text-[#686868] text-wrap text-sm '>Rua Afonso Braz nº 900 - Vila Nova Conceição - São Paulo - SP</p>
                 </div>
 
                 <div className='flex gap-4'>
                     <img src={location} alt=""  className='w-[30px]'/>
-                    <p className='text-[#686868]'>Rua Dr Bormann, nº 13 - salas 307, 308, 309 - Centro - Niterói - RJ</p>
+                    <p className='text-[#686868] text-wrap text-sm '>Rua Dr Bormann, nº 13 - salas 307, 308, 309 - Centro - Niterói - RJ</p>
                 </div>
             
             </div>
