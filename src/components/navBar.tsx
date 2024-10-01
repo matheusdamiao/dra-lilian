@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useWindowDimensions from "./../utils/useWindowDimension";
-import logo from "./../images/logo_del_bianco.svg";
+import logo from "./../images/logo-branca.svg";
 
 const NavBar = () => {
   const size = useWindowDimensions();
@@ -17,7 +17,7 @@ const NavBar = () => {
   }, [size]);
 
   return (
-    <div className="bg-transparent top-0 w-full h-24 lg:h-[17svh] flex items-center justify-center flex-col pt-4 px-6 z-50">
+    <div className="bg-none absolute top-0 w-full h-24 lg:h-[120px] flex justify-center pt-4 px-6 z-50">
       <img
         src={logo}
         width={214}

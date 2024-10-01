@@ -1,34 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Anybody", sans-serif;
 }
 
 
-.arsenal-regular {
-    font-family: "Arsenal", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .arsenal-bold {
-    font-family: "Arsenal", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .arsenal-regular-italic {
-    font-family: "Arsenal", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .arsenal-bold-italic {
-    font-family: "Arsenal", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
+
+p,
+small {
+  font-family: "Inter", system-ui;
+}

@@ -2,60 +2,35 @@ import React from "react";
 import zap from "./../icons/whatsapp.svg";
 import mail from "./../icons/mail.svg";
 import location from "./../icons/location.svg";
-
+import herovideo from './../images/hero-video.mp4'
 import NavBar from "./navBar";
+import bgHero from './../images/bg-hero-2.webp'
+import Button from "./Button";
+import ButtonCTA from "./Button";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[#FFFFF] h-full">
+    <div className="">
       <NavBar />
-      <section className=" bg-[#E3E3E3] flex mx-auto w-full lg:justify-between justify-center lg:flex-nowrap flex-wrap h-[500px] lg:h-[65svh] ">
-        <div className="px-6 flex w-full items-center justify-center lg:h-full flex-col gap-[35px]">
-          <h1 className="arsenal-regular lg:text-5xl text-4xl text-[#333333] text-center ">
-            Site em Construção
-          </h1>
-          <h3 className="arsenal-regular lg:text-lg text-base max-w-[400px] text-[#2A2A2A] text-center ">
-            Enquanto finalizamos nosso site, você pode entrar em contato conosco
-            pelos links abaixo
-          </h3>
-          <div className="flex flex-col  max-w-[300px] w-full">
-            <a
-              href="https://api.whatsapp.com/send?phone=5511960585588"
-              target="_blank"
-              className="flex items-center justify-center bg-[#333333] w-full"
-            >
-              <img src={zap} />
-              <p className=" text-center text-white px-4 py-3 text-base">
-                WhatsApp
-              </p>
-            </a>
-            <span className="block text-center text-gray-500 py-1">ou </span>
-            <div className="bg-white border-[#333333] border-[1px] w-full flex items-center justify-center">
-              <img src={mail} />
-              <a
-                href="mailto:liliandbd@gmail.com"
-                className=" text-center text-base px-4 py-3 text-[#444444] "
-              >
-                liliandbd@gmail.com
-              </a>
-            </div>
-          </div>
+      <section className="h-[100svh] bg-black lg:h-[750px] relative w-full flex items-center justify-center">
+        
+        <video src={herovideo} className="w-full absolute top-0 opacity-40 h-full lg:h-[750px] object-cover " loop autoPlay muted ></video>
+  
+              {/* <img 
+              className=" object-cover absolute w-full h-full top-0"
+              src={bgHero}
+              /> */}
+        
+
+        <div className="flex flex-col px-6 items-center relative justify-center z-40 gap-6 pt-14">
+          <span className="lg:w-[1000px] w-[280px] h-[400px] lg:h-[500px] absolute top-0 bg-black opacity-40 z-20 blur-3xl"></span>
+          <h1 className="font-normal  text-[40px] lg:text-[70px] text-white z-30 text-center leading-tight">Excelência Jurídica, <br /> Compromisso Humano</h1>
+          <h3 className="font-normal  text-base lg:text-xl max-w-[600px] z-40 text-center  text-white tracking-wider "> Seja para empresas ou pessoas físicas, estamos aqui para orientar você com empatia, respeito e uma dedicação inabalável à justiça.</h3>
+          <ButtonCTA children={'Agende uma reunião'} backgroundColor="#FFFF"/>
         </div>
+
       </section>
-      <div className="bg-[#4D4D4D] px-8 w-full h-[250px] lg:h-[20svh] flex items-center justify-center flex-col gap-6">
-        <div className="flex gap-4">
-          <img src={location} alt="" />
-          <p className="text-white">
-            Rua Afonso Braz nº 900 - Vila Nova Conceição - São Paulo - SP
-          </p>
-        </div>
-        <div className="flex gap-4">
-          <img src={location} alt="" />
-          <p className="text-white">
-            Rua Dr Bormann, nº 13 - salas 307, 308, 309 - Centro - Niterói - RJ
-          </p>
-        </div>
-      </div>
+      
     </div>
   );
 };
