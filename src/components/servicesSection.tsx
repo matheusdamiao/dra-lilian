@@ -1,7 +1,12 @@
 import React from 'react'
 import icon from './../icons/blue-circles.svg'
+import useAnimateOnView from '../utils/useAnimateOnView'
+import { motion } from 'framer-motion'
 
 const ServicesSection = () => {
+
+  const {TitleAnimation, animationControls, ref } = useAnimateOnView()
+
 
     const cards = [
         {
@@ -46,12 +51,28 @@ const ServicesSection = () => {
 
   return (
     <div id='especialidades' className='flex flex-col px-6 max-w-7xl mx-auto my-[50px] lg:my-[100px]'>
-      <h3 className='text-[#818181] text-sm lg:text-xl '>Nossas especialidades</h3>
-      <h4 className='text-[#333333] lg:text-[36px] pt-4 text-[28px] lg:w-[70%] '>Com uma abordagem humana e personalizada, levamos soluções jurídicas a empresas e pessoas físicas</h4>
+      <motion.h3
+      initial='hidden'
+      animate={animationControls}
+       variants={{
+        hidden: {
+            opacity: 0, y: '20px',
+          },
+          show: {
+            opacity: 1, y: '0'
+          }
+       }}
+     transition={{delay: 0.1, duration: 0.5}}
+      ref={ref} className='text-[#818181] text-sm lg:text-xl '>Nossas especialidades</motion.h3>
+      <motion.h4
+         initial='hidden'
+         animate={animationControls} variants={TitleAnimation}
+        transition={{delay: 0.3, duration: 0.5}}
+      className='text-[#333333] lg:text-[36px] pt-4 text-[28px] lg:w-[70%] '>Com uma abordagem humana e personalizada, levamos soluções jurídicas a empresas e pessoas físicas</motion.h4>
       <div className='flex pt-12 lg:justify-start justify-center w-full gap-8 flex-wrap'>
         {cards.map((card)=> {
             return (
-                <div className='flex hover:scale-105 transition-transform flex-col px-6 rounded-[8px] py-6 justify-center gap-4 max-w-[350px] h-[250px] bg-[#FCFCFC] shadow-2xl'>
+                <div key={card.titulo} className='flex hover:scale-105 transition-transform flex-col px-6 rounded-[8px] py-6 justify-center gap-4 max-w-[350px] h-[250px] bg-[#FCFCFC] shadow-2xl'>
                     <img src={icon} width={30} alt="" />
                     <h5 className='text-[#333333] text-xl'>{card.titulo}</h5>
                     <p className='text-[#8B8C8C] text-sm'>{card.texto}</p>

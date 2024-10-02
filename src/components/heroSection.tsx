@@ -7,8 +7,13 @@ import NavBar from "./navBar";
 import bgHero from './../images/bg-hero-2.webp'
 import Button from "./Button";
 import ButtonCTA from "./Button";
+import useAnimateOnView from "../utils/useAnimateOnView";
+import { motion } from 'framer-motion'
 
 const HeroSection = () => {
+
+  const {TitleAnimation, animationControls, ref } = useAnimateOnView()
+
   return (
     <div className="">
       {/* <NavBar /> */}
@@ -22,11 +27,30 @@ const HeroSection = () => {
               /> */}
         
 
-        <div className="flex flex-col px-6 items-center relative justify-center z-40 gap-6 pt-14">
+        <div ref={ref} className="flex flex-col px-6 items-center relative justify-center z-40 gap-6 pt-14">
           <span className="lg:w-[1000px] w-[280px] h-[400px] lg:h-[500px] absolute top-0 bg-black opacity-40 z-20 blur-3xl"></span>
-          <h1 className="font-normal  text-[40px] lg:text-[70px] text-white z-30 text-center leading-tight">Excelência Jurídica, <br /> Compromisso Humano</h1>
-          <h3 className="font-normal  text-base lg:text-xl max-w-[600px] z-40 text-center  text-white tracking-wider "> Seja para empresas ou pessoas físicas, estamos aqui para orientar você com empatia, respeito e uma dedicação inabalável à justiça.</h3>
-          <a href="/#contato" className="z-[8888888888888888888]"><ButtonCTA children={'Agende uma reunião'} backgroundColor="#FFFF"/></a>
+          <motion.h1
+            initial='hidden'
+            animate={animationControls} variants={TitleAnimation}
+            transition={{delay: 0.2, duration: 0.5}}
+          className="font-normal  text-[40px] lg:text-[70px] text-white z-30 text-center leading-tight">Excelência Jurídica, <br /> Compromisso Humano</motion.h1>
+          <motion.h3
+            initial='hidden'
+            animate={animationControls} variants={TitleAnimation}
+           transition={{delay: 0.5, duration: 0.5}}
+          className="font-normal  text-base lg:text-xl max-w-[600px] z-40 text-center  text-white tracking-wider "> Seja para empresas ou pessoas físicas, estamos aqui para orientar você com empatia, respeito e uma dedicação inabalável à justiça.</motion.h3>
+          <motion.a
+            initial='hidden'
+            animate={animationControls} variants={{
+              hidden: {
+                opacity: 0, y: '20px',
+              },
+              show: {
+                opacity: 1, y: '0'
+              }
+            }}
+           transition={{delay: 1, duration: 0.5}}
+          href="/#contato" className="z-[8888888888888888888]"><ButtonCTA children={'Agende uma reunião'} backgroundColor="#FFFF"/></motion.a>
         </div>
 
       </section>

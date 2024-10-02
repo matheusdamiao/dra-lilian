@@ -63,27 +63,27 @@ const ContactSection = () => {
             <h3 className='text-[#C6C6C6] text-sm lg:text-xl z-40 '>Entre em contato</h3>
             <h2 className='text-[28px] text-[#333333] lg:text-5xl !leading-[128%]'>Agende uma consulta com nossos especialistas</h2>
             <div className='pt-10 flex flex-col gap-6 order-3'>
-                <div className='flex gap-4'>
+                {/* <div className='flex gap-4'>
                     <img src={phone} alt="" className='w-[30px]' />
-                    <p className='text-[#686868]'>+55 21 993939-3020</p>
-                </div>
+                    <p className='text-[#686868]'>(11) 96058-5588</p>
+                </div> */}
 
-                <div className='flex gap-4'>
+                <div className='flex items-center gap-4'>
                     <img src={zap} alt="" className='w-[30px] opacity-80'/>
-                    <p className='text-[#686868]'>+55 21 993939-3020</p>
+                    <p className='text-[#686868]'>(11) 96058-5588</p>
                 </div>
 
-                <div className='flex gap-4'>
+                <div className='flex items-center gap-4'>
                     <img src={mail} alt="" className='w-[30px]'/>
-                    <p className='text-[#686868] text-wrap text-sm lg:text-base'> contato@delbiancodomingos.com.br</p>
+                    <p className='text-[#686868] text-wrap text-sm lg:text-base'> liliandbd@gmail.com</p>
                 </div>
 
-                <div className='flex gap-4'>
+                <div className='flex items-center gap-4'>
                     <img src={location} alt="" className='w-[30px]' />
                     <p className='text-[#686868] text-wrap text-sm '>Rua Afonso Braz nº 900 - Vila Nova Conceição - São Paulo - SP</p>
                 </div>
 
-                <div className='flex gap-4'>
+                <div className='flex items-center gap-4'>
                     <img src={location} alt=""  className='w-[30px]'/>
                     <p className='text-[#686868] text-wrap text-sm '>Rua Dr Bormann, nº 13 - salas 307, 308, 309 - Centro - Niterói - RJ</p>
                 </div>

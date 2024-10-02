@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import logo from './../icons/logo-footer.svg'
+import logo from './../images/logo-santos-white.svg'
 import phone from './../icons/phone.svg'
 import mail from './../icons/mail.svg'
 import location from './../icons/mdi_location.svg'
@@ -22,17 +22,17 @@ const Footer = () => {
 
 
                 <div className='flex flex-col gap-6  '>
-                    <div className='flex  gap-5'>
+                    <div className='flex items-center gap-5'>
                         <img src={phone} alt='icone' width={27} height={27}/>
-                        <p className='text-[#CDCDCD] text-sm'>(21) 92272-3020</p>
+                        <p className='text-[#CDCDCD] text-sm'>(11) 96058-5588</p>
                     </div>
-                    <div className='flex gap-5'>
+                    <div className='flex items-center gap-5'>
                         <img src={mail} alt='icone' width={27} height={27}/>
-                        <p className='text-[#CDCDCD] text-sm'>contato@draclarissadias.com.br</p>
+                        <p className='text-[#CDCDCD] text-sm'>liliandbd@gmail.com</p>
                     </div>
-                    <div className='flex gap-5'>
+                    <div className='flex items-center gap-5'>
                          <img src={location} alt='icone' width={27} height={27}/>
-                        <p className='text-[#CDCDCD] text-sm'>Av. Ernani do Amaral Peixoto, 207 - Sala 1315 - Centro, Niterói - RJ</p>
+                        <p className='text-[#CDCDCD] text-sm'>Rua Afonso Braz nº 900 - Vila Nova Conceição - São Paulo - SP</p>
                     </div>
                 </div>
 
@@ -42,11 +42,10 @@ const Footer = () => {
                 <div className='flex flex-col gap-8'>
                     <h5 className='text text-white' >Menu do Site</h5>
                     <ul className='flex flex-col gap-4 text-[#aaaaaa]'>
-                        <li><Link to='/#depoimentos'>Depoimentos</Link></li>
                         <li><Link to='/#especialidades'>Especialidades</Link></li>
-                        <li><Link to='/#depoimentos'>Diferenciais</Link></li>
-                        <li><Link to='/#depoimentos'>Sobre o Escritório</Link></li>
-                        <li><Link to='/#depoimentos'>Entre em contato</Link></li>
+                        <li><Link to='/#diferenciais'>Diferenciais</Link></li>
+                        <li><Link to='/#sobre'>Sobre o Escritório</Link></li>
+                        <li><Link to='/#contato'>Entre em contato</Link></li>
 
                     </ul>
                 </div>
@@ -65,7 +64,7 @@ const Footer = () => {
 
             <small>Del Bianco Santos - Advocacia e Consultoria Jurídica </small>
 
-            <small>Desenvolvido por Matheus Damião</small>    
+            <small><a href='https://matheusdamiao.com.br' target='_blank'>Desenvolvido por Matheus Damião </a></small>    
         </div>         
   
       </div>

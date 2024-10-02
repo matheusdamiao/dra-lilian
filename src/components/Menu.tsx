@@ -23,21 +23,21 @@ const handleMenuMobile = () =>{
 
 
   return (
-    <nav className=' lg:max-w-7xl w-full mx-auto z-[88888888888] h-[80px] sm:h-0 bg-menu-mobile fixed sm:relative'>
+    <nav className='bg-menu-mobile lg:max-w-7xl w-full mx-auto z-[88888888888] h-[80px] sm:h-0 bg-menu-mobile fixed sm:relative'>
       
         < div className='pt-[25px] pl-8 max-w-6xl relative lg:mx-auto w-full flex items-center gap-[30px] lg:justify-between sm:px-5 lg:px-5 xl:px-0'>
             <div className=' lg:hidden block flex-0 flex-shrink-0  w-[150px]'>
               <Link to="/" className='cursor-pointer'><img src={logo} width={201} height={83} alt=''/></Link>
             </div>
             <ul className='hidden gap-[30px] sm:flex'>
-              <li><a href="/#especialidades" className='text-base lg:text-lg text-white hover:text-gray-300 font-sans text-nowrap hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-400 after:absolute after:bottom-[-10px]'>Especialidades</a></li>
-              <li><a href="/#diferenciais" className='text-base lg:text-lg text-white hover:text-gray-300 text-nowrap hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-400 after:absolute after:bottom-[-10px]'>Diferenciais</a></li>
+              <li><a href="/#especialidades" className='z-50 text-base lg:text-lg text-white hover:text-gray-300 font-sans text-nowrap hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-400 after:absolute after:bottom-[-10px]'>Especialidades</a></li>
+              <li><a href="/#diferenciais" className='z-50 text-base lg:text-lg text-white hover:text-gray-300 text-nowrap hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-400 after:absolute after:bottom-[-10px]'>Diferenciais</a></li>
               {/* <li><a href="/#informacoes" className='text-base lg:text-xl text-transparent hover:text-black text-nowrap hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-400 after:absolute after:bottom-[-10px]'>Informações</a></li> */}
             </ul>
             <Link to='/'><div className='lg:pl-[40px] lg:block hidden '><img src={logo} width={201} height={83} alt='' className='lg:w-[90%]'/></div></Link>
             <ul className='hidden gap-[30px] sm:flex items-center'>
-              <li><a href="/#sobre" className='text-base lg:text-lg text-white hover:text-gray-300 text-nowrap hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-400 after:absolute after:bottom-[-10px]'>Sobre o Escritório</a></li>
-              <li><a href="/#contato" className='text-base lg:text-lg text-white hover:text-gray-300 text-nowrap hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-400 after:absolute after:bottom-[-10px]'>Contato</a></li>
+              <li><a href="/#sobre" className='z-50 text-base lg:text-lg text-white hover:text-gray-300 text-nowrap hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-400 after:absolute after:bottom-[-10px]'>Sobre o Escritório</a></li>
+              <li><a href="/#contato" className='z-50 text-base lg:text-lg text-white hover:text-gray-300 text-nowrap hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-400 after:absolute after:bottom-[-10px]'>Contato</a></li>
             </ul>
           </div>
 
@@ -50,13 +50,13 @@ const handleMenuMobile = () =>{
 
 
       {isOpen ?  
-        <div className='absolute top-0 translate-x-[0px] duration-500 transition-all bg-menu-aberto mt-[80px] text-white w-full h-[300px]'>
+        <div className='bg-menu-aberto absolute top-0 translate-x-[0px] duration-500 transition-all bg-menu-aberto mt-[80px] text-white w-full h-[300px]'>
           <ul className='px-[20px] pt-[95px] flex flex-col gap-4 items-center ' >
             <li className='py-spacing-lg px-spacing-xl'>
-              <a href='/sobre' onClick={()=> setIsOpen(!isOpen)} className='text-primary-base-white font-semibold hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-700 after:absolute after:bottom-[-10px]'>Sobre o Escritório</a>
+              <a href='/#sobre' onClick={()=> setIsOpen(!isOpen)} className='text-primary-base-white font-semibold hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-700 after:absolute after:bottom-[-10px]'>Sobre o Escritório</a>
             </li>
             <li className='py-spacing-lg px-spacing-xl'>
-              <a href='/areas-de-atuacao' onClick={()=> setIsOpen(!isOpen)} className='text-primary-base-white font-semibold hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-700 after:absolute after:bottom-[-10px]'>Áreas de Atuação</a>
+              <a href='/#especialidades' onClick={()=> setIsOpen(!isOpen)} className='text-primary-base-white font-semibold hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-700 after:absolute after:bottom-[-10px]'>Especialidades</a>
             </li>
             <li className='py-spacing-lg px-spacing-xl '>
               <a href='/#contato' onClick={()=> setIsOpen(!isOpen)} className='text-primary-base-white font-semibold hover:after:w-full after:w-0 relative  hover:after:h-[4px]  after:bg-yellow hover:after:block after:transition-all after:duration-700 after:absolute after:bottom-[-10px]' > Contato </a>

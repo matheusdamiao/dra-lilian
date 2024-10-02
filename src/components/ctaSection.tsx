@@ -1,6 +1,7 @@
 import React from 'react'
 import video from './../images/contact-section.mp4'
 import ButtonCTA from './Button'
+import { Link } from 'gatsby'
 
 const CtaSection = () => {
   return (
@@ -10,7 +11,7 @@ const CtaSection = () => {
             <h3 className='text-[#C6C6C6] text-sm lg:text-xl z-40 text-center '>Entre em contato</h3>
             <h4 className='text-[#FFFFFF] text-[36px] z-30 text-center'> Estamos aqui para ajudar</h4>
             <p className='text-[#FFFFFF] text-center pb-10 z-50'>Agende uma consulta com nossa equipe e receba o suporte jurídico de que você precisa.</p>
-             <ButtonCTA children={'Agende uma reunião'} backgroundColor="#FFFF"/>
+             <Link className='z-[99999999999]' to='/#contato'><ButtonCTA children={'Agende uma reunião'} backgroundColor="#FFFF"/></Link>
 
         </div>
     </div>
