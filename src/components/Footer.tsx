@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                     <div className='flex items-center gap-5'>
                          <img src={location} alt='icone' width={27} height={27}/>
-                        <p className='text-[#CDCDCD] text-sm'>Rua Afonso Braz nº 900 - Vila Nova Conceição - São Paulo - SP</p>
+                        <p className='text-[#CDCDCD] text-sm'>Alameda Santos, 2159 - 15º Andar - Jardim Paulista, São Paulo - SP</p>
                     </div>
                 </div>
 

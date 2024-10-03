@@ -35,15 +35,15 @@ const ServicesSection = () => {
         },
         {
             titulo: 'Direito Desportivo',
-            texto: 'Assessoria especializada no setor da moda, protegendo a criatividade e os direitos dos profissionais da área.'
+            texto: 'Assessoria jurídica especializada em contratos, patrocínios e disputas esportivas.'
         },
         {
             titulo: 'Direito Tributário',
-            texto: 'Soluções completas para questões patrimoniais, contratuais e de responsabilidade civil.'
+            texto: 'Consultoria estratégica para otimização fiscal e defesa em disputas tributárias.'
         },
         {
             titulo: 'Direito de Família e Sucessões',
-            texto: 'Assessoria especializada no setor da moda, protegendo a criatividade e os direitos dos profissionais da área.'
+            texto: 'Soluções personalizadas para questões familiares e sucessórias com empatia e justiça.'
         },
     ]
 

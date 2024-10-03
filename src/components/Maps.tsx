@@ -5,7 +5,7 @@ const Maps = () => {
     
         <div className="mt-[0px]">
             <div className="overflow-hidden bg-none">
-                <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Rua%20Afonso%20Braz%20n%C2%BA%20900%20-%20Vila%20Nova%20Concei%C3%A7%C3%A3o%20-%20S%C3%A3o%20Paulo%20-%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed" >
+                <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Alameda%20Santos,%202159%20-%2015%C2%BA%20Andar%20-%20Jardim%20Paulista,%C2%A0S%C3%A3o%C2%A0Paulo%C2%A0-%C2%A0SP&t=&z=15&ie=UTF8&iwloc=&output=embed" >
                 </iframe>
             </div>
         </div>
@@ -15,3 +15,4 @@ const Maps = () => {
 
 export default Maps
 
+{/* <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Alameda%20Santos,%202159%20-%2015%C2%BA%20Andar%20-%20Jardim%20Paulista,%C2%A0S%C3%A3o%C2%A0Paulo%C2%A0-%C2%A0SP&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedg */}
