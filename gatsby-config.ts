@@ -5,7 +5,7 @@ const config: GatsbyConfig = {
     title: `Del Bianco Domingos`,
     description: "Sociedade de Advocacia",
     image: `/icon.png`,
-    siteUrl: `https://del-bianco-santos-advocacia.netlify.app/`
+    siteUrl: `https://www.delbiancosantos.com.br/`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -17,11 +17,11 @@ const config: GatsbyConfig = {
       "icon": "src/images/icon.png"
     }
   },
-  'gatsby-plugin-postcss',
-  `gatsby-plugin-image`,
-  `gatsby-plugin-sharp`,
+    'gatsby-plugin-postcss',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
 
-]
+  ]
 };
 
 export default config;
