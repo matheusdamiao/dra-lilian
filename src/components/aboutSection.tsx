@@ -1,5 +1,5 @@
 import React from 'react'
-import fotoLilian from './../images/Component.png'
+import fotoLilian from './../images/new-foto-lilian-about.png'
 import useAnimateOnView from '../utils/useAnimateOnView'
 import { motion } from 'framer-motion'
 
