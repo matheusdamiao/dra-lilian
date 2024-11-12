@@ -1,5 +1,7 @@
 import React from 'react'
-import fotoLilian from './../images/new-foto-lilian-about.png'
+import fotoLilian2 from './../images/foto-lilian-edited.png'
+
+
 import useAnimateOnView from '../utils/useAnimateOnView'
 import { motion } from 'framer-motion'
 
@@ -14,8 +16,8 @@ const AboutSection = () => {
             <h3 className='text-[#C6C6C6] text-sm lg:text-xl z-40 '>Conheça a fundadora</h3>
         </div>
         <img
-          src={fotoLilian}
-          className="lg:order-1 w-full lg:w-fit order-4 lg:row-span-5 lg:col-span-1 lg:max-h-[550px]  pt-10 lg:pt-0 max-h-[550px] object-cover lg:mx-auto"
+          src={fotoLilian2}
+          className="lg:order-1 w-full lg:w-fit order-4 lg:row-span-5 lg:col-span-1 lg:max-h-[550px] mt-[40px] lg:pt-0 sm:w-[70%] object-cover lg:mx-auto"
         />
         
         <motion.h4

@@ -14,7 +14,7 @@ const Footer = () => {
       <div className='max-w-7xl w-full mx-auto flex flex-col justify-between h-full px-10'>
 
         <div className='flex justify-between lg:gap-0 gap-10 flex-wrap pt-[80px]'>
-            <div className='flex flex-col h-[350px] gap-20'>
+            <div className='flex flex-col h-[450px] gap-20'>
 
                 <div>
                     <img src={logo} alt='logo' width={331} className='w-[300px]' height={100}/>
@@ -33,6 +33,10 @@ const Footer = () => {
                     <div className='flex items-center gap-5'>
                          <img src={location} alt='icone' width={27} height={27}/>
                         <p className='text-[#CDCDCD] text-sm'>Alameda Santos, 2159 - 15º Andar - Jardim Paulista, São Paulo - SP</p>
+                    </div>
+                    <div className='flex items-center gap-5'>
+                         <img src={location} alt='icone' width={27} height={27}/>
+                        <p className='text-[#CDCDCD] text-sm'>Rua Dr Bormann, nº 13 - salas 307, 308, 309 - Centro - Niterói - RJ</p>
                     </div>
                 </div>
 

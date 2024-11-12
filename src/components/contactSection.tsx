@@ -68,10 +68,10 @@ const ContactSection = () => {
                     <p className='text-[#686868]'>(11) 96058-5588</p>
                 </div> */}
 
-                <div className='flex items-center gap-4'>
-                    <img src={zap} alt="" className='w-[30px] opacity-80'/>
-                    <p className='text-[#686868]'>(11) 96058-5588</p>
-                </div>
+                <a  href="https://api.whatsapp.com/send?phone=5511960585588" target='_blank' className='flex items-center gap-4'>
+                    <img src={zap} alt="" className='w-[30px] opacity-80 '/>
+                    <p className='text-[#686868] hover:underline'>(11) 96058-5588</p>
+                </a>
 
                 <div className='flex items-center gap-4'>
                     <img src={mail} alt="" className='w-[30px]'/>
