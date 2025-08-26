@@ -1,5 +1,6 @@
 import React from 'react'
-import fotoLilian2 from './../images/foto-lilian-edited.png'
+// import fotoLilian2 from './../images/foto-lilian-edited.png'
+import fotoLilian2 from './../images/foto-lilian-about (3).png'
 
 
 import useAnimateOnView from '../utils/useAnimateOnView'

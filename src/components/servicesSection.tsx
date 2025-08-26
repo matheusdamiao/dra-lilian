@@ -29,14 +29,14 @@ const ServicesSection = () => {
             titulo: 'Direito Empresarial',
             texto: 'Estratégias jurídicas para o fortalecimento e proteção de negócios.'
         },
-        {
-            titulo: 'Fashion Law',
-            texto: 'Assessoria especializada no setor da moda, protegendo a criatividade e os direitos dos profissionais da área.'
-        },
-        {
-            titulo: 'Direito Desportivo',
-            texto: 'Assessoria jurídica especializada em contratos, patrocínios e disputas esportivas.'
-        },
+        // {
+        //     titulo: 'Fashion Law',
+        //     texto: 'Assessoria especializada no setor da moda, protegendo a criatividade e os direitos dos profissionais da área.'
+        // },
+        // {
+        //     titulo: 'Direito Desportivo',
+        //     texto: 'Assessoria jurídica especializada em contratos, patrocínios e disputas esportivas.'
+        // },
         {
             titulo: 'Direito Tributário',
             texto: 'Consultoria estratégica para otimização fiscal e defesa em disputas tributárias.'
