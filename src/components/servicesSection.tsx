@@ -9,42 +9,46 @@ const ServicesSection = () => {
 
 
     const cards = [
-        {
-            titulo: 'Direito do Consumidor',
-            texto: 'Proteção e reparação em casos de abusos, fraudes ou cobranças indevidas.'
-        },
-        {
-            titulo: 'Direito Civil',
-            texto: 'Soluções completas para questões patrimoniais, contratuais e de responsabilidade civil.'
-        },
-        {
-            titulo: 'Direito Imobiliário',
-            texto: 'Assessoria em transações, regularizações e disputas imobiliárias.'
-        },
-        {
-            titulo: 'Direito Trabalhista',
-            texto: 'Defendemos os interesses de empregadores e empregados com equilíbrio e justiça.'
-        },
-        {
-            titulo: 'Direito Empresarial',
-            texto: 'Estratégias jurídicas para o fortalecimento e proteção de negócios.'
-        },
-        // {
-        //     titulo: 'Fashion Law',
-        //     texto: 'Assessoria especializada no setor da moda, protegendo a criatividade e os direitos dos profissionais da área.'
-        // },
-        // {
-        //     titulo: 'Direito Desportivo',
-        //     texto: 'Assessoria jurídica especializada em contratos, patrocínios e disputas esportivas.'
-        // },
-        {
-            titulo: 'Direito Tributário',
-            texto: 'Consultoria estratégica para otimização fiscal e defesa em disputas tributárias.'
-        },
-        {
-            titulo: 'Direito de Família e Sucessões',
-            texto: 'Soluções personalizadas para questões familiares e sucessórias com empatia e justiça.'
-        },
+      {
+        titulo: 'Direito do Consumidor',
+        texto: 'Proteção e reparação em casos de abusos, fraudes ou cobranças indevidas.'
+      },
+      {
+        titulo: 'Direito Civil',
+        texto: 'Soluções completas para questões patrimoniais, contratuais e de responsabilidade civil.'
+      },
+      {
+        titulo: 'Direito Imobiliário',
+        texto: 'Assessoria em transações, regularizações e disputas imobiliárias.'
+      },
+      {
+        titulo: 'Direito Trabalhista',
+        texto: 'Defendemos os interesses de empregadores e empregados com equilíbrio e justiça.'
+      },
+      {
+        titulo: 'Direito Empresarial',
+        texto: 'Estratégias jurídicas para o fortalecimento e proteção de negócios.'
+      },
+      {
+        titulo: 'Direito Contratual',
+        texto: 'Interpretação e execução de contratos, garantindo segurança jurídica.'
+      },
+      // {
+      //     titulo: 'Fashion Law',
+      //     texto: 'Assessoria especializada no setor da moda, protegendo a criatividade e os direitos dos profissionais da área.'
+      // },
+      // {
+      //     titulo: 'Direito Desportivo',
+      //     texto: 'Assessoria jurídica especializada em contratos, patrocínios e disputas esportivas.'
+      // },
+      // {
+      //     titulo: 'Direito Tributário',
+      //     texto: 'Consultoria estratégica para otimização fiscal e defesa em disputas tributárias.'
+      // },
+      // {
+      //     titulo: 'Direito de Família e Sucessões',
+      //     texto: 'Soluções personalizadas para questões familiares e sucessórias com empatia e justiça.'
+      // },
     ]
 
 

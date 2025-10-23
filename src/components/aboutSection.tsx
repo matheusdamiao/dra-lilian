@@ -1,6 +1,8 @@
 import React from 'react'
 // import fotoLilian2 from './../images/foto-lilian-edited.png'
-import fotoLilian2 from './../images/foto-lilian-about (3).png'
+// import fotoLilian2 from './../images/foto-lilian-about (3).png'
+import fotoLilian2 from './../images/foto-lilian-about (5).png'
+
 
 
 import useAnimateOnView from '../utils/useAnimateOnView'
@@ -18,7 +20,7 @@ const AboutSection = () => {
         </div>
         <img
           src={fotoLilian2}
-          className="lg:order-1 w-full lg:w-fit order-4 lg:row-span-5 lg:col-span-1 lg:max-h-[550px] mt-[40px] lg:pt-0 sm:w-[70%] object-cover lg:mx-auto"
+          className="lg:order-1 w-full lg:w-fit order-4 lg:row-span-5 lg:col-span-1 lg:max-h-[550px] mt-[40px] lg:mt-[0px] mb-[40px] lg:pt-0 sm:w-[70%] object-cover lg:mx-auto"
         />
         
         <motion.h4
